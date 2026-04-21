@@ -1,0 +1,292 @@
+create table employees (
+
+empl_id int primary key  not null ,
+eml_name varchar (50),
+hire_date date ,
+salary numeric (10,2),
+jop_titel varchar(50));
+
+INSERT INTO employees (empl_id, eml_name, hire_date, salary, jop_titel)
+VALUES
+(1, 'Ahmed El-Sayed', '2022-03-15', 18000, 'Team Leader'),
+(2, 'Omar Hassan', '2022-06-01', 17500, 'Team Leader'),
+(3, 'Mohamed Samir', '2022-09-10', 19000, 'Team Leader'),
+(4, 'Tamer Saad', '2023-01-20', 20000, 'Team Leader'),
+(5, 'Hassan Ibrahim', '2022-11-05', 18500, 'Team Leader'),
+
+(6, 'Ali Gamal', '2022-02-10', 11000, 'Broker'),
+(7, 'Khaled Ali', '2022-03-22', 10500, 'Broker'),
+(8, 'Mostafa Tarek', '2022-04-18', 10000, 'Broker'),
+(9, 'Youssef Adel', '2022-05-25', 11500, 'Broker'),
+(10, 'Mahmoud Fathy', '2022-06-30', 12000, 'Broker'),
+(11, 'Sherif Nabil', '2022-07-12', 10800, 'Broker'),
+(12, 'Eslam Hany', '2022-08-19', 11200, 'Broker'),
+(13, 'Ziad Ashraf', '2022-09-21', 9800, 'Broker'),
+(14, 'Abdelrahman Samy', '2022-10-10', 12500, 'Broker'),
+(15, 'Saif Eldin', '2022-11-14', 13000, 'Broker'),
+(16, 'Hossam Mostafa', '2022-12-05', 10200, 'Broker'),
+(17, 'Yehia Reda', '2023-01-08', 11800, 'Broker'),
+(18, 'Amr Salah', '2023-02-16', 13500, 'Broker'),
+(19, 'Omar Adel', '2023-03-22', 14000, 'Broker'),
+(20, 'Nour Tarek', '2023-04-10', 10000, 'Broker'),
+(21, 'Bassem Khaled', '2023-05-18', 15000, 'Broker'),
+(22, 'Mostafa Ehab', '2023-06-25', 11000, 'Broker'),
+(23, 'Ahmed Fawzy', '2023-07-30', 14500, 'Broker'),
+(24, 'Sherif Adel', '2023-08-14', 15500, 'Broker'),
+(25, 'Karim Adel', '2023-09-01', 12000, 'Broker'),
+(26, 'Nourhan Samy', '2023-10-11', 11500, 'Broker'),
+(27, 'Ali Reda', '2023-11-09', 10800, 'Broker'),
+(28, 'Kareem Mostafa', '2023-12-20', 12500, 'Broker'),
+(29, 'Mohamed Adel', '2022-01-28', 9900, 'Broker'),
+(30, 'Hany Ibrahim', '2022-03-03', 10100, 'Broker');
+
+select * from employees
+
+
+-----------------------------------------------------------------------------------------------
+create table marketing_campaigns (
+
+camp_id int primary key  not null ,
+camp_name varchar (50),
+start_date date ,
+end_date date ,
+budget numeric (10,2),
+channel varchar(50),
+status varchar(50),
+target_property_type varchar(50),
+leads_count int );
+
+
+INSERT INTO marketing_campaigns 
+(camp_id, camp_name, start_date, end_date, budget, channel, status, target_property_type, leads_count)
+VALUES
+(1, 'Summer Residential Luxury Push', '2022-05-01', '2022-07-31', 250000.00, 'Facebook Ads', 'Completed', 'Residential', 320),
+(2, 'Downtown Commercial Launch', '2022-03-15', '2022-06-15', 180000.00, 'Google Ads', 'Completed', 'Commercial', 280),
+(3, 'New Cairo Residential Growth', '2022-09-01', '2022-11-30', 300000.00, 'Instagram Ads', 'Completed', 'Residential', 410),
+(4, 'Holiday Commercial Deals', '2022-12-01', '2023-01-15', 220000.00, 'Facebook Ads', 'Completed', 'Commercial', 260),
+(5, 'Elite Residential Villas Campaign', '2023-02-01', '2023-04-30', 350000.00, 'Google Ads', 'Completed', 'Residential', 450),
+(6, 'Ramadan Residential Offers', '2023-03-20', '2023-04-25', 200000.00, 'Social Media', 'Completed', 'Residential', 300),
+(7, 'Summer Commercial Investment', '2023-05-01', '2023-07-31', 280000.00, 'Instagram Ads', 'Completed', 'Commercial', 380),
+(8, 'Luxury Residential Compounds', '2023-06-10', '2023-09-10', 400000.00, 'Google Ads', 'Running', 'Residential', 520),
+(9, 'Commercial First Buyers Push', '2023-08-01', '2023-10-31', 150000.00, 'Facebook Ads', 'Running', 'Commercial', 240),
+(10, 'Investor Commercial Expansion', '2023-09-15', '2023-12-15', 500000.00, 'LinkedIn Ads', 'Planned', 'Commercial', 600),
+
+(11, 'New Capital Residential Launch', '2022-01-10', '2022-03-30', 270000.00, 'Google Ads', 'Completed', 'Residential', 350),
+(12, 'High-End Residential Villas', '2022-07-01', '2022-09-30', 320000.00, 'Facebook Ads', 'Completed', 'Residential', 390),
+(13, 'Winter Residential Discounts', '2022-11-01', '2023-01-31', 190000.00, 'Instagram Ads', 'Completed', 'Residential', 275),
+(14, 'Smart Residential Homes', '2023-01-15', '2023-03-15', 210000.00, 'Google Ads', 'Completed', 'Residential', 310),
+(15, 'Luxury Coastal Residential Units', '2023-04-01', '2023-06-30', 370000.00, 'Social Media', 'Completed', 'Residential', 420),
+
+(16, 'Downtown Commercial Expansion', '2022-02-10', '2022-05-10', 160000.00, 'Google Ads', 'Completed', 'Commercial', 250),
+(17, 'Business District Commercial Push', '2022-04-01', '2022-06-30', 210000.00, 'LinkedIn Ads', 'Completed', 'Commercial', 290),
+(18, 'Retail Commercial Units Campaign', '2022-06-15', '2022-09-15', 230000.00, 'Facebook Ads', 'Completed', 'Commercial', 310),
+(19, 'Mega Commercial Investment Drive', '2022-08-01', '2022-11-01', 260000.00, 'Google Ads', 'Completed', 'Commercial', 340),
+(20, 'Commercial Leasing Boost', '2022-10-01', '2023-01-01', 240000.00, 'Instagram Ads', 'Completed', 'Commercial', 330),
+
+(21, 'Residential Early Buyers Campaign', '2023-01-01', '2023-03-31', 220000.00, 'Facebook Ads', 'Completed', 'Residential', 300),
+(22, 'Commercial Startup Spaces', '2023-02-15', '2023-05-15', 180000.00, 'LinkedIn Ads', 'Completed', 'Commercial', 270),
+(23, 'Residential Family Homes Push', '2023-03-01', '2023-06-01', 300000.00, 'Google Ads', 'Completed', 'Residential', 420),
+(24, 'Commercial Offices Expansion', '2023-04-10', '2023-07-10', 270000.00, 'Facebook Ads', 'Completed', 'Commercial', 360),
+(25, 'Luxury Residential Phase 2', '2023-05-20', '2023-08-20', 420000.00, 'Instagram Ads', 'Running', 'Residential', 540),
+
+(26, 'Commercial Real Estate Growth', '2023-06-01', '2023-09-01', 310000.00, 'Google Ads', 'Running', 'Commercial', 400),
+(27, 'Residential Summer Offers', '2023-07-01', '2023-09-30', 280000.00, 'Facebook Ads', 'Running', 'Residential', 390),
+(28, 'Commercial Investor Deals', '2023-08-15', '2023-11-15', 450000.00, 'LinkedIn Ads', 'Planned', 'Commercial', 580),
+(29, 'Residential New Projects Boost', '2023-09-01', '2023-12-01', 330000.00, 'Instagram Ads', 'Planned', 'Residential', 460),
+(30, 'Commercial Year End Push', '2023-10-01', '2023-12-31', 500000.00, 'Google Ads', 'Planned', 'Commercial', 620);
+
+select * from marketing_campaigns;
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+create table properties (
+
+prop_id int primary key  not null ,
+prop_type varchar (50),
+properties_class varchar(50),
+location_info varchar (50));
+
+INSERT INTO properties (prop_id, prop_type, properties_class, location_info)
+VALUES
+(1, 'Residential', 'Primary', 'Cairo'),
+(2, 'Residential', 'Secondary', 'New Cairo - Fifth Settlement'),
+(3, 'Residential', 'Primary', 'Sheikh Zayed'),
+(4, 'Commercial', 'Secondary', 'New Cairo - Fifth Settlement'),
+(5, 'Residential', 'Primary', 'Madinaty'),
+(6, 'Commercial', 'Primary', '6th Settlement'),
+(7, 'Residential', 'Secondary', 'Sheikh Zayed'),
+(8, 'Commercial', 'Secondary', 'Cairo'),
+(9, 'Residential', 'Primary', 'New Cairo - Fifth Settlement'),
+(10, 'Residential', 'Secondary', 'Madinaty'),
+(11, 'Commercial', 'Primary', 'Sheikh Zayed'),
+(12, 'Residential', 'Primary', 'Cairo'),
+(13, 'Residential', 'Secondary', '6th Settlement'),
+(14, 'Commercial', 'Secondary', 'New Cairo - Fifth Settlement'),
+(15, 'Residential', 'Primary', 'Sheikh Zayed'),
+(16, 'Residential', 'Secondary', 'Cairo'),
+(17, 'Commercial', 'Primary', 'Madinaty'),
+(18, 'Residential', 'Primary', 'New Cairo - Fifth Settlement'),
+(19, 'Residential', 'Secondary', 'Sheikh Zayed'),
+(20, 'Commercial', 'Secondary', 'Cairo'),
+(21, 'Residential', 'Primary', '6th Settlement'),
+(22, 'Residential', 'Secondary', 'Madinaty'),
+(23, 'Commercial', 'Primary', 'New Cairo - Fifth Settlement'),
+(24, 'Residential', 'Primary', 'Sheikh Zayed'),
+(25, 'Residential', 'Secondary', 'Cairo'),
+(26, 'Commercial', 'Secondary', 'Madinaty'),
+(27, 'Residential', 'Primary', 'New Cairo - Fifth Settlement'),
+(28, 'Commercial', 'Primary', 'Sheikh Zayed'),
+(29, 'Residential', 'Secondary', '6th Settlement'),
+(30, 'Commercial', 'Secondary', 'Cairo');
+
+select * from properties
+----------------------------------------------------------------------------------------------
+
+create table leads (
+
+leads_id int primary key  not null ,
+name_info varchar (50),
+phone varchar(50),
+source_info varchar (50),
+budget_info varchar (50), 
+status_info varchar (50));
+
+INSERT INTO leads (leads_id, name_info, phone, source_info, budget_info, status_info) VALUES
+(1, 'Hossam El-Din Ahmed', '01011111111', 'Facebook Ads', 'Low Budget', 'Cold'),
+(2, 'Manar Mahmoud Hassan', '01122222222', 'Facebook Ads', 'Qualified', 'New'),
+(3, 'Tarek Abdel Latif', '01233333333', 'Facebook Ads', 'Low Budget', 'No Answer'),
+(4, 'Shady Mohamed Ali', '01544444444', 'Facebook Ads', 'Low Budget', 'Cold'),
+(5, 'Engy Abdel Fattah', '01055555555', 'Facebook Ads', 'Qualified', 'Follow-up'),
+(6, 'Mustafa Ibrahim Khalil', '01166666666', 'Facebook Ads', 'Low Budget', 'New'),
+(7, 'Riham Yasser Galal', '01277777777', 'Facebook Ads', 'Qualified', 'New'),
+(8, 'Walid El-Sayed Nour', '01088888888', 'Facebook Ads', 'Low Budget', 'No Answer'),
+(9, 'Amira Saad Kamel', '01199999999', 'Facebook Ads', 'Low Budget', 'Cold'),
+(10, 'Sherif Gamal Abdo', '01200000000', 'Facebook Ads', 'Qualified', 'Interested'),
+(11, 'Khaled Said Bayoumi', '01511112222', 'Facebook Ads', 'Qualified', 'Interested'),
+(12, 'Dalia Mohamed Fawzy', '01022223333', 'Facebook Ads', 'Qualified', 'Follow-up'),
+(13, 'Ehab Wagdy Amin', '01133334444', 'Property Finder', 'Qualified', 'Meeting Scheduled'),
+(14, 'Nabil Farouk Shaker', '01244445555', 'Property Finder', 'Qualified', 'Interested'),
+(15, 'Mervat El-Badry', '01555556666', 'Property Finder', 'Qualified', 'Follow-up'),
+(16, 'Sameh Sobhy Gomaa', '01066667777', 'Property Finder', 'Qualified', 'New'),
+(17, 'Heba Allah Magdy', '01177778888', 'Property Finder', 'Qualified', 'Interested'),
+(18, 'Alaa Morsy Tawfik', '01288889999', 'Property Finder', 'Qualified', 'Closed'),
+(19, 'Osama Ahmed Hamed', '01599990000', 'Instagram', 'Low Budget', 'New'),
+(20, 'Ghada Ibrahim Omar', '01010101010', 'Instagram', 'Qualified', 'Follow-up'),
+(21, 'Ashraf Mahmoud Hegazi', '01121212121', 'Instagram', 'Low Budget', 'Cold'),
+(22, 'Yasmin Abdel Salam', '01232323232', 'Instagram', 'Qualified', 'New'),
+(23, 'Fady Ramzy Boutros', '01543434343', 'Instagram', 'Qualified', 'Interested'),
+(24, 'Youssef Moataz Billah', '01054545454', 'Google Search', 'Qualified', 'Meeting Scheduled'),
+(25, 'Mai Abdel Wahab', '01165656565', 'Google Search', 'Qualified', 'New'),
+(26, 'Bassem Raafat Helmy', '01276767676', 'Google Search', 'Qualified', 'Follow-up'),
+(27, 'Omnia Mohamed Salah', '01587878787', 'Google Search', 'Qualified', 'Interested'),
+(28, 'Ziad Amr Hussein', '01098989898', 'Referral', 'Qualified', 'Closed'),
+(29, 'Salma Ahmed Refaat', '01109090909', 'Referral', 'Qualified', 'Meeting Scheduled'),
+(30, 'Karim Mamdouh Fouad', '01213131313', 'Direct Call', 'Low Budget', 'No Answer');
+
+
+select * from leads
+---------------------------------------------------------------------------------------------
+
+create table fact (
+
+empl_id int   not null ,
+camp_id  int not null ,
+prop_id int not null ,
+leads_id int not null ,
+date_info date ,
+tota_sales numeric (10,2),
+total_deals int ,
+total_profit int ,
+totalleads int );
+
+INSERT INTO fact (empl_id, camp_id, prop_id, leads_id, date_info, tota_sales, total_deals, total_profit, totalleads) VALUES
+(6, 1, 2, 2, '2022-05-10', 15000000.00, 3, 450000, 500),
+(6, 3, 9, 5, '2022-08-15', 22000000.00, 4, 660000, 650),
+(6, 11, 1, 10, '2022-12-01', 18500000.00, 3, 555000, 480),
+(6, 1, 5, 2, '2023-03-10', 12000000.00, 2, 360000, 420),
+(6, 15, 12, 18, '2023-06-20', 35000000.00, 6, 1050000, 950),
+(6, 25, 27, 2, '2023-09-15', 28000000.00, 5, 840000, 800),
+(6, 30, 20, 30, '2024-01-05', 42000000.00, 7, 1260000, 1100),
+(6, 1, 2, 2, '2022-06-15', 9000000.00, 2, 270000, 300),
+(6, 12, 3, 14, '2023-11-20', 16500000.00, 3, 495000, 540),
+(6, 5, 15, 22, '2023-02-14', 11000000.00, 2, 330000, 310),
+(21, 25, 27, 21, '2023-06-15', 55000000.00, 9, 1650000, 1800),
+(21, 12, 3, 21, '2022-08-01', 45000000.00, 8, 1350000, 1200),
+(21, 25, 15, 2, '2023-10-15', 31000000.00, 6, 930000, 1100),
+(21, 22, 27, 2, '2023-12-05', 55000000.00, 10, 1650000, 1800),
+(21, 7, 20, 20, '2023-06-01', 41000000.00, 7, 1230000, 1100),
+(15, 12, 3, 18, '2022-08-01', 45000000.00, 8, 1350000, 1200),
+(15, 8, 18, 12, '2023-11-15', 33400000.00, 6, 1002000, 940),
+(15, 22, 18, 12, '2023-11-22', 27300000.00, 5, 819000, 840),
+(15, 9, 2, 10, '2023-10-10', 12000000.00, 2, 360000, 630),
+(28, 28, 28, 28, '2023-09-01', 78500000.00, 12, 2355000, 2100),
+(28, 2, 3, 28, '2022-12-05', 39000000.00, 7, 1170000, 1050),
+(12, 11, 1, 28, '2022-02-15', 25000000.00, 5, 750000, 850),
+(12, 11, 1, 28, '2022-10-15', 14000000.00, 3, 420000, 510),
+(20, 5, 15, 24, '2023-03-10', 15400000.00, 3, 462000, 540),
+(20, 5, 15, 24, '2023-08-15', 12300000.00, 2, 369000, 410),
+(30, 20, 30, 30, '2022-11-05', 8900000.00, 2, 267000, 290),
+(30, 20, 30, 30, '2023-04-18', 11500000.00, 2, 345000, 415),
+(8, 16, 6, 5, '2022-03-25', 22300000.00, 4, 669000, 710),
+(8, 1, 5, 5, '2023-03-12', 23400000.00, 4, 702000, 680),
+(13, 13, 13, 22, '2022-12-12', 19700000.00, 3, 591000, 620),
+(13, 13, 13, 22, '2023-04-12', 22100000.00, 4, 663000, 780),
+(18, 14, 15, 13, '2023-02-28', 35000000.00, 6, 1050000, 980),
+(18, 15, 13, 22, '2023-07-18', 19800000.00, 3, 594000, 590),
+(17, 24, 4, 26, '2023-05-20', 29400000.00, 5, 882000, 750),
+(17, 13, 9, 18, '2023-02-05', 12000000.00, 2, 360000, 420),
+(1, 7, 20, 20, '2023-06-01', 41000000.00, 7, 1230000, 1100),
+(1, 7, 20, 20, '2023-11-01', 19400000.00, 3, 582000, 480),
+(3, 27, 25, 8, '2023-08-05', 16800000.00, 3, 504000, 590),
+(3, 25, 25, 8, '2023-04-10', 16500000.00, 3, 495000, 480),
+(4, 29, 29, 19, '2023-09-25', 23500000.00, 4, 705000, 820),
+(4, 26, 29, 19, '2023-06-30', 21800000.00, 4, 654000, 610),
+(26, 30, 10, 17, '2023-11-20', 31200000.00, 5, 936000, 950),
+(26, 30, 20, 3, '2024-02-15', 48500000.00, 9, 1455000, 1550),
+(10, 4, 8, 16, '2022-12-20', 14600000.00, 3, 438000, 410),
+(10, 28, 8, 16, '2022-11-20', 14200000.00, 2, 426000, 430),
+(14, 22, 23, 14, '2023-11-20', 27000000.00, 5, 810000, 890),
+(14, 30, 23, 14, '2022-05-18', 25600000.00, 5, 768000, 720),
+(19, 19, 2, 2, '2023-02-14', 9200000.00, 2, 276000, 310),
+(19, 17, 18, 26, '2022-11-22', 44000000.00, 8, 1320000, 1400),
+(22, 15, 12, 1, '2023-05-10', 8000000.00, 1, 240000, 480),
+(2, 26, 26, 3, '2023-12-30', 42000000.00, 8, 1260000, 1600),
+(2, 4, 8, 15, '2022-08-20', 11000000.00, 2, 330000, 320),
+(11, 10, 1, 11, '2023-05-18', 18600000.00, 3, 558000, 520),
+(7, 21, 15, 15, '2022-10-10', 9500000.00, 2, 285000, 290),
+(24, 24, 15, 26, '2022-07-20', 31600000.00, 6, 948000, 920),
+(29, 3, 14, 25, '2022-12-12', 11900000.00, 2, 357000, 370),
+(16, 4, 17, 9, '2023-10-10', 13400000.00, 2, 402000, 410),
+(5, 2, 4, 4, '2022-05-20', 10200000.00, 2, 306000, 340),
+(27, 23, 23, 23, '2023-07-02', 15600000.00, 3, 468000, 430),
+(9, 3, 26, 3, '2022-06-30', 28900000.00, 5, 867000, 1000),
+(25, 21, 2, 2, '2023-08-20', 21500000.00, 4, 645000, 700),
+(11, 2, 15, 20, '2022-06-18', 12000000.00, 2, 360000, 310),
+(13, 6, 25, 28, '2023-04-20', 18000000.00, 3, 540000, 540),
+(17, 13, 9, 18, '2023-02-05', 9500000.00, 1, 285000, 420),
+(23, 25, 8, 19, '2023-10-12', 28300000.00, 5, 849000, 720),
+(20, 20, 23, 30, '2023-05-14', 15000000.00, 2, 450000, 360),
+(22, 24, 4, 15, '2023-08-30', 14000000.00, 2, 420000, 440),
+(25, 29, 15, 29, '2023-12-25', 16200000.00, 3, 486000, 390),
+(1, 1, 1, 1, '2024-03-01', 25000000.00, 4, 750000, 600);
+
+
+select * from fact
+
+-----------------------------------------------------------------------------------------------------------------------
+
+---count total total_campaigns
+
+SELECT *, COUNT(camp_id) OVER () AS total_campaigns
+FROM marketing_campaigns;
+
+---sum of total sales
+
+select *, sum (tota_sales) over () as total_sales_
+from fact ;
+
+SELECT *, 
+       ROUND(SUM(tota_sales) OVER (), 0) AS total_sales_rounded
+FROM fact;
+
